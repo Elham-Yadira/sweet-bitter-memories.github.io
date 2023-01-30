@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+          <div class="slide slide1">
+            <div class="slide-content">
+              <!-- <span>Will you make me smile again?</span>
+              <p></p> -->
+              <p class="aa">Will you make me smile again?<br><br> Will you forgive my houndreds of mistakes again?</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="slide slide10">
+            <div class="slide-content">
+              <span></span>
+              <p class="az"><i>I want to be the sun of you new morning.</i></p>
+            </div>
+          </div> 
+
+
+
+
+
+          <div class="slide slide2">
+            <div class="slide-content">
+              <span ></span>
+              <p class="ab"> I want to be the light of your hope again.</p>
+            </div>
+          </div>
+          <div class="slide slide3">
+            <div class="slide-content">
+              <span ></span>
+              <p class="ac">তুমি কি আমার হাসিমুখের,<br>
+                আবার কারন হবে ?<br>
+                তুমি কি আমার শত ভুলের,<br>
+                আবার বারণ হবে ?<br>
+                আমি তোমার নতুন ভোরের,<br>
+                সূর্য হতে চাই<br>
+                আমি আবার তোমার আশার,<br>
+                প্রদীপ হতে চাই</p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="slide slide6">
+            <div class="slide-content">
+              <!-- <span></span> -->
+              <p class="af">You know what, YouTube is rubbing salt on my open wounds. They are suggesting me their so called spritual fact videos. In that video they say, "When someone is always in your mind without any kind of communication, that means, they are also thinking about you." This doesn't work like that I guess. I mean, Does it really make sense? At least in my case it doesn't." </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="slide slide5">
+            <div class="slide-content">
+              <span></span>
+              <p class="ae">I got your whats app number. Actually, You shared your your number on BBA 11th batch group, maybe you don't know that I am yet connected to that group. Its been a long time I haven't heard your voice. My heart was telling me to call you, maybe this time you will accept my apologize but last time the way you blocked me and removed your facebook page dreadfully broke my heart. I know I did the same thing with you. However, it hurts. So don't worry, I'm never ever gonna distrub you again. Take your space.</p>
+            </div>
+          </div>
+
+      
+
+
+
+
+          <div class="slide slide4">
+            <div class="slide-content">
+              <span></span>
+              <p class="ad">I'm still asking for you to Allah (swt), I don't know whether he is  gonna accept my dua or not even so I'm  making it and I don't know why I'm still waiting for you like a fool.  </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+          <div class="slide slide7">
+            <div class="slide-content">
+              <!-- <span></span> -->
+              <p class="ag">A lingering question is pounding in my head for a long time, don't get me wrong. I might sound like a stupid to you but yet wanna ask you. You were the head of FDT department, right? Then why did you left that? I wonder why, I mean did you do that because of me? Maybe you had some personal issues, right? Why would you do that for me?   But you left that post when I hurted you the most. I don't know, I genuinely don't know what happend there. You guys are exceedingly complicated. But if if my intution is true then I'm also agree with that proverb....  </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="slide slide8">
+            <div class="slide-content">
+              <span ></span>
+              <p class="ah">" কুকুরের পেটে ঘি হজম হয় না! " <br>
+                 Again I have to admit that I've lost somthing extremly valuable and You deserve somthing much better.</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="slide slide9">
+            <div class="slide-content">
+              <span></span>
+              <p class="ai">It hurts the worst when the person who made you feel so special yesterday, the same person makes you feel so unwanted today. </p>
+           
+            </div>
+          </div>
+
+
+
+
+          <!-- <div class="slide slide10">
+            <div class="slide-content">
+              <span></span>
+   
+            </div>
+          </div>  -->
+
+
+
+
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+      </div>
+
+
+
+
+      <script>
+        document.addEventListener('mousemove', function(e) {
+            let body = document.querySelector('body')
+            let heart = document.createElement('span')
+            let x = e.offsetX
+            let y = e.offsetY
+            heart.style.left = x + 'px'
+            heart.style.top = y + 'px'
+
+
+            let size = Math.random() * 80
+            heart.style.width = 30 + size + 'px'
+            heart.style.height = 30 + size + 'px'
+
+
+
+            let transfromValue = Math.random() * 360
+            heart.style.transform = 'rotate('+ transfromValue + 'deg)'
+
+
+            body.appendChild(heart)
+
+            setTimeout(function() {
+                heart.remove()
+            },1000)
+        })
+    </script>
+
+      <script src="script.js"></script>
+</body>
+</html>

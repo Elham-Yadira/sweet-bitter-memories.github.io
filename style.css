@@ -1,0 +1,295 @@
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: "Precious";
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: rgb(255, 193, 219);
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("lumitar-A4FJfFBEKts-unsplash.jpg");
+}
+.slide2 {
+  background-image: url("pexels-karolina-grabowska-4210787.jpg");
+}
+.slide3 {
+  background-image: url("kilimanjaro-studioz-1tgSROQC9hM-unsplash.jpg");
+}
+.slide4 {
+  background-image: url("pexels-alena-koval-961402 (1).jpg");
+}
+.slide5 {
+  background-image: url("annie-spratt-wuc-KEIBrdE-unsplash.jpg");
+}
+.slide6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("b.png");
+}
+.slide7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("c.png");
+}
+.slide8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("annie-spratt-fDghTk7Typw-unsplash.jpg");
+}
+.slide9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("a.png");
+}
+.slide10 {
+  background-image: url("pexels-anna-nekrashevich-8534381.jpg");
+}
+
+
+
+
+
+
+
+/* .slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+/* .slide-content span {
+  font-size: 3rem;
+  color: rgb(255, 161, 224);
+  margin-left: 80px;
+} */
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent rgba(231, 26, 105, 0.4) transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent rgba(231, 26, 105, 0.4);
+  right: 0;
+  margin-right: 30px;
+}
+
+/* p {
+  color: rgb(227, 119, 161);
+  font-size: 3rem;
+  margin-left: 100px;
+  margin-right: 100px;
+} */
+
+/* .slide-content span {
+  margin-left: 50px;
+  margin-right: 50px;
+} */
+
+
+/* --------------------------------------Cursor Animation----------------------------------------- */
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  /* min-height: 100vh;
+  background: #fff; */
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  20%, 80% {
+      opacity: 1;
+  }
+}
+
+span::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: url("ooo.png");
+  background-size: contain;
+  animation: moveShape 3s linear infinite;
+}
+
+
+
+@keyframes moveShape{
+  0% {
+      transform: translate(0) rotate(0deg);
+  }
+  100% {
+      transform: translate(20px) rotate(360deg);
+  }
+}
+
+
+
+.aa  {
+  margin-top: 22%;
+  margin-left: 43%;
+  margin-right: 28%;
+  font-size: 50px;
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(252, 86, 163, 0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+
+  
+}
+
+.ab {
+  margin-top: 20%;
+  margin-left: 27%;
+  margin-right: 23%;
+  font-size: 70px;
+  color: #ffffff;
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(255, 115, 0, 0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+
+}
+/* rgb(245, 228, 255) */
+.ac {
+  margin-top: 15%;
+  margin-left: 50%;
+  margin-right: 10%;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+
+}
+
+.ad {
+  margin-top: 20%;
+  margin-left: 50%;
+  margin-right: 10%;
+  font-size: 40px;
+  color: #c08492;
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+
+}
+
+.ae {
+  margin-top: 8%;
+  margin-left: 35%;
+  margin-right: 7%;
+  font-size: 39px;
+  color: #ffffff;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5)) ;
+  text-align: center;
+
+}
+
+.af {
+  margin-top: 11%;
+  margin-left: 13%;
+  margin-right: 13%;
+  font-size: 45px;
+  color: #ffffff;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  text-align: center;
+
+}
+
+.ag {
+  margin-top: 8%;
+  margin-left: 13%;
+  margin-right: 13%;
+  font-size: 42px;
+  color: #ffffff;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  text-align: center;
+
+}
+
+.ah {
+  margin-top: 30%;
+  margin-left: 17%;
+  margin-right: 17%;
+  font-size: 55px;
+  color: #ffffff;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) ;
+  text-align: center;
+
+}
+
+.ai {
+  margin-top: 17%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+}
+
+
+
+.az {
+  margin-top: 37%;
+  margin-left: 35%;
+  margin-right: 19%;
+  font-size: 70px;
+  color: #c45860;
+  position: absolute;
+  pointer-events: none;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5)) ;
+  animation: fadeInOut 3s linear infinite;
+  text-align: center;
+}
